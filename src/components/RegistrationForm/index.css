@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 18px;
+  border-radius: 15px;
+  min-height: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .view-container {
+    box-shadow: 0px 4px 16px 0px;
+    flex-shrink: 0;
+    max-width: 480px;
+  }
+}
+
+.heading {
+  font-family: Roboto;
+  color: #ea580c;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.name-input-field {
+  outline: none;
+  padding: 8px;
+  border: 1px solid #9aa5b1;
+  border-radius: 5px;
+}
+
+.label {
+  color: #475569;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #9aa5b1;
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.submit-btn {
+  background-color: #ea580c;
+  color: #ffffff;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .submit-btn {
+    width: 30%;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.success-icon {
+  width: 70px;
+}
+
+.error-field {
+  border: 1px solid #ff0b37;
+  background-color: #cbd2d9;
+}
+
+.error-msg {
+  align-self: start;
+  font-family: Roboto;
+  color: #ff0b37;
+  font-size: 12px;
+  margin-top: 4px;
+}
